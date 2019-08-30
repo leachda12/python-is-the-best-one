@@ -1,0 +1,63 @@
+print('Hello World!')
+
+#why is python so easy
+
+if 5 > 2:
+  print('five is greater than two')
+
+#You can use either single or double quotes for strings, it'll do the same thing
+
+x = "yeehaw" #heh
+
+print(x)
+ 
+a, b, c = 2, 3, 4
+#You can assign values to multiple characters in one line
+
+print(a + b + c)
+
+d = e = f = "yes"
+#You can also give the same value to multiple variables on one line
+
+print("The value of d is " + d)
+#This only works when the variable's value is a string
+
+m = 74 #int
+n = 6.3 #float
+o = 5j #complex
+#There are three different types of numeric variables; int, float, and complex. Complex variables are composed of a number and and imaginary number which is laveled as "j"
+
+print(type(m))
+print(type(n))
+print(type(o))
+
+M = float(m)
+N = int(n)
+O = complex(m)
+
+print(type(M))
+print(type(N))
+print(type(O))
+print(M)
+print(N)
+print(O)
+#You can change the type of variable this way. Complex variables cannot be changed into another number type.
+
+import random
+
+print(random.randrange(1,10))
+#Python doesn't have its own random function, but has a built in module called random that must be imported.
+
+A = int(3.8) #A will be 3
+B = float(4) #B will be 4.0
+C = str(3) #C will be '3'
+#These are just ways to specify a type to a variable. str is to change it into a string.
+
+D = """Hello this is 
+a multiline string
+variable."""
+print(D)
+#Use three double quotes to create a multiline string. This can be assigned as a variable.
+
+print(D[4])
+#This will select the character at position 4 in the string. The first character is actually position 0.
