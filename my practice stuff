@@ -61,3 +61,94 @@ print(D)
 
 print(D[4])
 #This will select the character at position 4 in the string. The first character is actually position 0.
+
+print(D[1:5])
+#This selects a range of characters
+
+print(D[-5:-1])
+#This selects characters from the end of the string
+
+print(len(D))
+#the len function will give you a length of the string
+
+E = "  Hello, world  "
+print(E.strip()) 
+#strip removes any white space from the beginning or end of the string
+
+F = "Hello, world"
+
+print(F.lower())
+#lower puts the string in all lower case characters.
+
+print(F.upper())
+#upper makes the string look angry
+
+print(F.replace("Hello", "'ello"))
+#replace allows you to replace specified parts of the string
+
+print(F.split(","))
+#split will separate the string into substrings when it finds the specified separator
+
+G = "string" in D
+print(G)
+H = "string" not in D
+print(H)
+#This just shows how you can check to see if there is a specific string within a string
+
+I = "Hello"
+J = "World"
+K = I + " " + J
+print(K)
+#You can combine strings with the + operator. Add " " to add a space between the strings.
+
+age = 25
+txt = "Hi I am {}"
+print(txt.format(age))
+#You can change the format of a number variable to string by using the format function, which will insert the variable into a spot marked with {}
+#This can be used for multiple values as long as they are marked in the string
+
+length = 4
+width = 7
+height = 8
+box = "The box is {2} inches high, {0} inches long, and {1} inches wide."
+print(box.format(length, width, height))
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+#You can make a list collection that is ordered and changable this way
+#Print a specific value or values from the list by naming the index name or range
+
+thislist[1] = "blackcurrant"
+#Change specific values this way
+
+for x in thislist:
+  print(x)
+#This lets you loop through all of the values in the list using a for loop
+
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+#Using and if function combined with in, you can find out if a value is in a list
+
+print(len(thislist))
+#You can find out the number of items in a list this way
+
+thislist.append("orange")
+#This is how you insert a new value to the end of a list
+
+thislist.insert(1, "grape")
+print(thislist)
+#This lets you insert an item at a specific index
+
+thislist.remove("blackcurrant")
+#Items can be removed as well
+
+thislist.pop()
+#The pop method will delete the specified index, or delete the last item in the list
+print(thislist)
+
+del thislist[0]
+#del will delete the item at the specified index
+print(thislist)
+
+del thislist
+#Or you can just straight up delete the whole thing if you don't use an index
