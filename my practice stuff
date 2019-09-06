@@ -151,4 +151,49 @@ del thislist[0]
 print(thislist)
 
 del thislist
-#Or you can just straight up delete the whole thing if you don't use an index
+#Or you can just straight up delete the whole variable if you don't use an index
+
+thislist = ["orange", "blueberry", "apple"]
+print(thislist)
+
+thislist.clear()
+print(thislist)
+#clear will empty out the list
+
+thislist.append("banana")
+thislist.append("apple")
+thislist.append("blueberry")
+
+mylist = thislist.copy()
+print(mylist)
+#There are two ways to copy a list. One is shown above with the copy method,
+#but you can also use list as shown below
+mylist = list(thislist)
+print(mylist)
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2
+print(list3)
+#you can simply add lists together by... adding lists together.... nice
+
+for x in list2:
+  list1.append(x)
+print(list1)
+#Or you could just add values from one variable to another this way
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+#A tuple is a collection that is order and cannot be changed, it is written with parenthesis rather than square brackets
+#Essentially the same things can be done for tuples as lists, minus the changing aspects
+#You can, however, join two tuples together by adding them with the + sign for another variable
+
+tuplechange = list(thistuple)
+tuplechange[1] = "kiwi"
+thistuple = tuple(tuplechange)
+print(thistuple)
+#This is the one workaround for making changes to a tuple
+
+thattuple = ("apple",)
+#It's possible to make a tuple with only one item in it, just don't forget the comma at the end
+
