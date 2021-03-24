@@ -2,4 +2,30 @@ print("Hello World!")
 
 # add that comment bb
 
+# you can add inputs to print with your string
 
+print("What is your name?")
+name = input()
+print("Hello, " + name)
+
+
+# below is the inproper way to create a sum in python
+# it will just place the two inputs next to each other in the printed line
+# this is because the input() function is used for strings rather than integers
+
+print("First Number:")
+first_number = input()
+print("Second Number:")
+second_number = input()
+sum = first_number + second_number
+print(sum)
+
+# here is the right way to do it
+# the input just needs to be marked as an integer
+
+print("First Number:")
+first_number = int(input())
+print("Second Number:")
+second_number = int(input())
+sum = first_number + second_number
+print(sum)
