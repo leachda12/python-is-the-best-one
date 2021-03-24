@@ -29,3 +29,41 @@ print("Second Number:")
 second_number = int(input())
 sum = first_number + second_number
 print(sum)
+
+# you can then also add a string to the sum output
+
+print("First Number:")
+first_number = int(input())
+print("Second Number:")
+second_number = int(input())
+sum = first_number + second_number
+print("Sum: " + sum)
+
+# above is the wrong way to do it
+# it will not convert the integer to a string for you
+# to convert the integer to a string, add str()
+
+print("First Number:")
+first_number = int(input())
+print("Second Number:")
+second_number = int(input())
+sum = first_number + second_number
+print("Sum: " + str(sum))
+
+
+# here's how to make a simple calorie counter with the date
+
+print("Todays date?")
+date = input()
+print("Breakfast calories?")
+breakfast = int(input())
+print("Lunch calories?")
+lunch = int(input())
+print("Dinner calories?")
+dinner = int(input())
+print("Snack calories?")
+snack = int(input())
+calories = breakfast + lunch + dinner + snack
+print("Calorie content for " + date + ": " + str(calories))
+
+
