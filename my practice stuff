@@ -9,7 +9,8 @@ name = input()
 print("Hello, " + name)
 
 
-# below is the inproper way to create a sum in python
+
+# below is the improper way to create a sum in python
 # it will just place the two inputs next to each other in the printed line
 # this is because the input() function is used for strings rather than integers
 
@@ -51,6 +52,7 @@ sum = first_number + second_number
 print("Sum: " + str(sum))
 
 
+
 # here's how to make a simple calorie counter with the date
 
 print("Todays date?")
@@ -65,7 +67,6 @@ print("Snack calories?")
 snack = int(input())
 calories = breakfast + lunch + dinner + snack
 print("Calorie content for " + date + ": " + str(calories))
-
 
 # you can skip over the original print functions for the inputs by combining them in the input like so
 
@@ -88,15 +89,127 @@ calories = int(breakfast) + int(lunch) + int(dinner) + int(snack)
 print("Calorie content for " + date + ": " + str(calories))
 
 
+
 #variables can be easily edited with methods
 #here's an example of how to capitalize a string
 
 words = 'Capitalize these babies'
 print(words.upper())
 
-# you can use the find method to find the index number of the first time a character is found in the given text
+# you can use the find method to find the index number of the first time a character or characters are found in the given text
 # index number starts with 0 then goes up, which is why the following output is 1
 
 words = "Python for Beginners"
 print(words.find('y'))
+
+# you can also replace parts using the replace method
+# if you try to replace a character or characters that don't exist in the string, it just won't change anything
+
+words = "Python for Beginners"
+print(words.replace('for', '4'))
+
+# use the in operator to find out whether or not a character or set of characters exist in a string
+# this will give you a boolean output
+
+words = "Python for Beginners"
+print('Python' in course)
+
+
+
+
+# in python, you can use the main mathematic operators to solve equations
+# division can be done in multiple ways using / and // with some extra lil doodads for remainders and exponents
+
+# this will give you the floating point number
+
+print(10 / 3)
+
+# this will give you an integer, or whole number
+
+print(10 // 3)
+
+# this will give you the remainder of the divided number
+
+print(10 % 3)
+
+# this will give you the exponential value
+
+print(10 ** 3)
+
+# you can change the value of a variable by throwing in some equations
+# below is an example of changing the value of x by adding to it
+
+x = 10
+x = x + 3
+
+# this can also be done with less code in what's called an augmented assignment operator
+# the augmented assignment operator below is shown as +=
+
+x += 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
