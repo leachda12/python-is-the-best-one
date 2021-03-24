@@ -67,3 +67,36 @@ calories = breakfast + lunch + dinner + snack
 print("Calorie content for " + date + ": " + str(calories))
 
 
+# you can skip over the original print functions for the inputs by combining them in the input like so
+
+date = input("Todays date? ")
+breakfast = int(input("Breakfast calories? "))
+lunch = int(input("Lunch calories? "))
+dinner = int(input("Dinner calories? "))
+snack = int(input("Snack calories? "))
+calories = breakfast + lunch + dinner + snack
+print("Calorie content for " + date + ": " + str(calories))
+
+# this can also be typed out this way
+
+date = input("Todays date? ")
+breakfast = input("Breakfast calories? ")
+lunch = input("Lunch calories? ")
+dinner = input("Dinner calories? ")
+snack = input("Snack calories? ")
+calories = int(breakfast) + int(lunch) + int(dinner) + int(snack)
+print("Calorie content for " + date + ": " + str(calories))
+
+
+#variables can be easily edited with methods
+#here's an example of how to capitalize a string
+
+words = 'Capitalize these babies'
+print(words.upper())
+
+# you can use the find method to find the index number of the first time a character is found in the given text
+# index number starts with 0 then goes up, which is why the following output is 1
+
+words = "Python for Beginners"
+print(words.find('y'))
+
