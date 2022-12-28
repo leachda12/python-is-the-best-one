@@ -207,33 +207,87 @@
 # # >> there are no arms
 
 
-# lay it out all nice like
-favorite_languages = {
-    'earl': 'rust',
-    'david': 'python',
-    'collin': 'javascript, but specifically working with ember',
-    'tim': 'typescript',
-}
+# # lay it out all nice like
+# favorite_languages = {
+#     'earl': 'rust',
+#     'david': 'python',
+#     'collin': 'javascript, but specifically working with ember',
+#     'tim': 'typescript',
+# }
 
-# looping through a dictionary
-# gotta use items()
-for name, language in favorite_languages.items():
-    print(f"{name}'s favorite language is {language}")
+# # looping through a dictionary
+# # gotta use items()
+# for name, language in favorite_languages.items():
+#     print(f"{name}'s favorite language is {language}")
 
-# looping through just the keys
-for name in favorite_languages.keys():
-    print(name.title())
-# this is actually unecessary, a lot like writing a four page word document
-# for a small group project. however, this might actually serve a purpose in
-# that it can make code easier to read in some situations.
+# # looping through just the keys
+# for name in favorite_languages.keys():
+#     print(name.title())
+# # this is actually unecessary, a lot like writing a four page word document
+# # for a small group project. however, this might actually serve a purpose in
+# # that it can make code easier to read in some situations.
 
-# looping through a sorted dictionary
-for name in sorted(favorite_languages):
-    print(name.title())
+# # looping through a sorted dictionary
+# for name in sorted(favorite_languages):
+#     print(name.title())
 
-# looping through all of the values
-for language in favorite_languages.values():
-    print(language)
+# # looping through all of the values
+# for language in favorite_languages.values():
+#     print(language)
 
-# you can make a list of dictionaries, a dictionary of lists, a dictionary
-# of dictionaries, and a list of lists. the possibilities are endless.
+# # you can make a list of dictionaries, a dictionary of lists, a dictionary
+# # of dictionaries, and a list of lists. the possibilities are endless.
+
+
+
+# # user input and while loops
+# # just use input()
+# message = input("what's your favorite color")
+# print(message)
+# # >> *whatever they answered*
+
+# # while loops do the thing while a condition is true
+# current_number = 1
+# while current_number <= 5:
+#     print(current_number)
+#     current_number +=
+# # using ++ will just be read as a + operator
+
+# # it can be a good idea to use a flag for programs that run as long as 
+# # many conditions are true
+# active = True
+# while active:
+#     # *code*
+
+# # use break to break a loop
+
+# # use continue to skip the rest of the loop
+# # this example only prints odd numbers, skipping the print function when
+# # the number is evenly divisible by 2
+# current_number = 0
+# while current_number < 10:
+#     current_number += 1
+#     if current_number % 2 == 0:
+#         continue
+
+#     print(current_number)
+
+# # use while loop to move items from one list to another
+# unconfirmed_users = ['jim', 'beverly', 'adam', 'mel']
+# confirmed_users = []
+# # pretend to verify these users
+# while unconfirmed_users:
+#     current_user = unconfirmed_users.pop()
+
+#     print("Verifying user....")
+#     print(f"{current_user} has been verified")
+#     confirmed_users.append(current_user)
+
+# removing specific values from a list
+pets = ['dog', 'cat', 'snake', 'guinea pig', 'cat', 'rabbit', 'dog', 'cat']
+print(pets)
+
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)
