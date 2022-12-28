@@ -283,11 +283,80 @@
 #     print(f"{current_user} has been verified")
 #     confirmed_users.append(current_user)
 
-# removing specific values from a list
-pets = ['dog', 'cat', 'snake', 'guinea pig', 'cat', 'rabbit', 'dog', 'cat']
-print(pets)
+# # removing specific values from a list
+# pets = ['dog', 'cat', 'snake', 'guinea pig', 'cat', 'rabbit', 'dog', 'cat']
+# print(pets)
 
-while 'cat' in pets:
-    pets.remove('cat')
+# while 'cat' in pets:
+#     pets.remove('cat')
 
-print(pets)
+# print(pets)
+
+
+
+# # functions
+# # defining a function
+# def greet_user():
+#     """Display a simple greeting"""
+#     print("hello!")
+
+# greet_user()
+
+# # parameters and arguments exist
+# # you can use keyword arguments if you don't want to worry about the order
+# def my_pet(pet_name, favorite_toy, pet_nickname):
+#     print(f"{pet_name}, AKA {pet_nickname}, loves to play with their {favorite_toy}")
+
+# my_pet("olive", "tennis ball", "ollie")
+# my_pet(favorite_toy="pillow", pet_nickname="boobie", pet_name="blubird")
+
+# # set a default value in the parameters
+# def my_pet(pet_name, favorite_toy, pet_nickname='puppy'):
+#     print(f"{pet_name}, AKA {pet_nickname}, loves to play with their {favorite_toy}")
+
+# my_pet('raspberry', 'mango')
+
+# # return will return a value
+
+# # arguments can be made optional
+# def get_formatted_name(first_name, last_name, middle_name=''):
+#     # Return a full name, neatly formatted
+#     if middle_name:
+#         full_name = f"{first_name} {middle_name} {last_name}"
+#     else:
+#         full_name = f"{first_name} {last_name}"
+#     return full_name.title()
+
+# musician = get_formatted_name('billy', 'ray', 'cyrus')
+# print(musician)
+
+# musician = get_formatted_name('miley', 'cyrus')
+# print(musician)
+
+# # pass as many arguments as you want
+# def make_pizza(*toppings):
+#     # print the list of toppings that have been requested
+#     print("Here's what you asked for:")
+#     for topping in toppings:
+#         print(f"- {topping}")
+
+# make_pizza("pineapple", "ham")
+# make_pizza("sausage", "peppers", "broccoli")
+
+
+# importing functions/modules
+# use the keyword import to import
+import pizza
+# this imports the module pizza.py
+
+# import a specific function
+from pizza import make_pizza
+# multiple functions can be specified if separated by commas
+
+# use as to give an alias to an imported function
+from pizza import make_pizza as create_pizza
+
+# import all functions in a module
+from pizza import *
+# probably don't use this method with larger projects you didn't make
+# this could cause functions to be overwritten
