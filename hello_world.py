@@ -170,3 +170,70 @@
 #     print(f"{fruit} is in")
 # else:
 #     print("no fruits?")
+
+
+
+# # dictionaries
+# # python's objects
+# alien_0 = {'color': 'green', 'eyes': 10}
+
+# print(alien_0['color'])
+# # >> green
+
+# # add new key-value pair to an existing dictionary
+# alien_0['arms'] = 4
+
+# # declare an empty dictionary
+# alien_1 = {}
+
+# alien_1['color'] = 'red'
+# alien_1['arms'] = 6
+# print(f"the new alien is {alien_1['color']} and has {alien_1['arms']} arms.")
+# # >> the new alien is red and has 6 eyes
+
+# # remove key-value pairs
+# del alien_0['arms']
+# print(alien_0)
+# # >> {'color': 'green', 'eyes': 10}
+
+
+# # using get()
+# # this is useful in cases where the value might not exist in the dictionary
+# eye_count = alien_0.get('eyes', 'there are no eyes')
+# print(eye_count);
+# # >> 10
+# arm_count = alien_0.get('arms', 'there are no arms')
+# print(arm_count)
+# # >> there are no arms
+
+
+# lay it out all nice like
+favorite_languages = {
+    'earl': 'rust',
+    'david': 'python',
+    'collin': 'javascript, but specifically working with ember',
+    'tim': 'typescript',
+}
+
+# looping through a dictionary
+# gotta use items()
+for name, language in favorite_languages.items():
+    print(f"{name}'s favorite language is {language}")
+
+# looping through just the keys
+for name in favorite_languages.keys():
+    print(name.title())
+# this is actually unecessary, a lot like writing a four page word document
+# for a small group project. however, this might actually serve a purpose in
+# that it can make code easier to read in some situations.
+
+# looping through a sorted dictionary
+for name in sorted(favorite_languages):
+    print(name.title())
+
+# looping through all of the values
+for language in favorite_languages.values():
+    print(language)
+
+# you can make a list of dictionaries, a dictionary of lists, a dictionary
+# of dictionaries, and a list of lists. the possibilities are endless.
